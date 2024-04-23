@@ -92,3 +92,14 @@ main img {
     width: 60%;
     max-width: 300px;
 }
+/*Video*/
+.video {
+    background-color: var(--cor5);
+    text-align: center;
+    padding: 20px 0px;
+    margin: 10px -20px;
+}
+.yt-video {
+    aspect-ratio: 16/9;
+    width: 85%;
+}
