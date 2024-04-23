@@ -21,7 +21,7 @@
     margin: 0px;
 }
 body {
-    background-color: #fdbaa4;
+    background-color: var(--cor1);
 }
 /*Cabeçalho*/
 header {
@@ -42,7 +42,7 @@ header>p {
 /*Menu de navegação*/
 nav {
     background-color: var(--cor5);
-    padding: 10px;
+    padding: 15px 10px;
 }
 nav>a {
     transition-duration: 0.2s;
@@ -61,8 +61,9 @@ nav>a:hover {
 main {
     background-color: white;
     border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
     min-width: 300px;
-    max-width: 850px;
+    max-width: 950px;
     padding: 0px 20px;
     margin: auto;
 }
@@ -82,6 +83,20 @@ main p {
     font: normal 1.1em var(--fonte-padrao);
     text-align: justify;
     padding: 10px 0px;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+}
+main a:hover {
+    text-decoration: underline;
+}
+main a::after {
+    content: '🔗';
+}
+main strong {
+    color: var(--cor5);
 }
 .imagem {
     text-align: center;
@@ -110,18 +125,24 @@ aside {
     border-radius: 10px;
 }
 aside>h3 {
+    font: bold 1em var(--fonte-padrao);
     background-color: var(--cor2);
     border-radius: 10px 10px 0px 0px;
     padding: 10px;
     margin-top: 10px;
+    color: white;
 }
-aside p {
+aside>p {
     padding: 5px 10px;
 }
-aside ul {
+aside>ul {
     columns: 2;
     list-style-position: inside;
+    list-style-type: '🗸';
     padding: 20px;
+}
+aside>ul>li {
+    font: normal 1em var(--fonte-padrao);
 }
 /*Rodapé*/
 footer {
@@ -130,6 +151,7 @@ footer {
     margin-top: 15px;
 }
 footer p {
+    font: normal 1em var(--fonte-padrao);
     text-align: center;
     color: white;
 }
