@@ -20,6 +20,9 @@
 * {
     margin: 0px;
 }
+body {
+    background-color: #fdbaa4;
+}
 /*Cabeçalho*/
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
@@ -53,4 +56,39 @@ nav>a {
 nav>a:hover {
     background-color: var(--cor3);
     color: var(--cor5);
+}
+/*Principal*/
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 850px;
+    padding: 0px 20px;
+    margin: auto;
+}
+main h1 {
+    font: normal 2em var(--fonte-android);
+    padding-top: 10px;
+    color: var(--cor5);
+}
+main h2 {
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    font: normal 1.75em var(--fonte-android);
+    border-radius: 10px;
+    padding: 0px 10px;
+    color: var(--cor5);
+}
+main p {
+    font: normal 1.1em var(--fonte-padrao);
+    text-align: justify;
+    padding: 10px 0px;
+}
+.imagem {
+    text-align: center;
+}
+main img {
+    width: 100%;
+}
+.img-pqn {
+    width: 60%;
+    max-width: 300px;
 }
